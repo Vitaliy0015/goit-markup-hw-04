@@ -398,6 +398,10 @@ img {
     color: #FFFFFF;
     background-color: #404BBF;
     border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0,0,0,1),
+    0px 2px 1px rgba(0,0,0,0.08),
+    0px 2px 2px rgba(0,0,0,0.12);
+    border-radius: 4px;
 }
 
 /*----------Works------------*/
@@ -410,20 +414,26 @@ img {
 .works-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    gap: 48px 21px;
 }
 
 .works-container {
     box-sizing: border-box;
     background: #FFFFFF;
+    border: 1px solid #E7E9FC;
 }
-
+.works-container:hover, 
+.works-container:focus {
+    background-color: #ffffff;
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46,47,66,0.08),
+    0px 1px 1px rgba(46,47,66,0.16),
+    0px 2px 1px rgba(46,47,66,0.88);
+}
 .information-container {
-    padding: 32px 16px;
-    border-left: solid 1px #E7E9FC;
-    border-bottom: solid 1px #E7E9FC;
-    border-right: solid 1px #E7E9FC;
-    ;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-left: 16px;
 }
 
 .works-top-text {
@@ -442,7 +452,6 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
-
 
 .link {}
 
@@ -521,7 +530,7 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: var(--color-iris);
+    background-color: #434455;
     display: flex;
     align-items: center;
     justify-content: center;
