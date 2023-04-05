@@ -85,7 +85,7 @@ img {
 /*-----------------HEADER----------*/
 
 .header {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
@@ -174,6 +174,10 @@ img {
 
 /*-------------Hero--------------*/
 .hero {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 1440px;
     background: #2E2F42;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -240,22 +244,21 @@ img {
     display: flex;
     flex-direction: column;
 }
-.priority-soc-link{
-    border-radius: 4px;
+.priority-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
     background-color: #F4F4FD;
-
 }
-.priority-soc-icon{
-    margin-left: 100px;
-    margin-top: 24px;}
-
 .priority-top-text {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-top: 0px;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -368,7 +371,10 @@ img {
     fill: #FFFFFF;
 }
 .workers-soc-link:hover {
-    background-color: #404BBF;
+background-color: #404BBF;
+}
+.workers-soc-link:focus {
+background-color: #404BBF;
 }
 /*-------------Client---------*/
 
@@ -392,6 +398,7 @@ img {
 
 .client-item {
     min-width: 168px;
+    min-height: 88px;
 }
 
 .client-soc-link {
@@ -405,14 +412,27 @@ img {
     justify-content: center;
 }
 
-.link {}
-
 .client-soc-icon {
     fill: var(--color-light-slate);
-    margin: 16px 32px;
 }
-
-
+.client-soc-link:hover{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-ocean);
+    border-radius: 4px;
+}
+.client-soc-link:hover > .client-soc-icon {
+    fill: var(--color-ocean);
+}
+.client-soc-link:focus{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-ocean);
+    border-radius: 4px;
+}
+.client-soc-link:focus > .client-soc-icon {
+    fill: var(--color-ocean);
+}
 
 /*---------Filter------------*/
 .filter {}
@@ -430,26 +450,38 @@ img {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    text-align: center;
     line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
     letter-spacing: 0.04em;
+    color: var(--color-iris);
     background-color: #F4F4FD;
-    color: #4d5ae5;
     cursor: pointer;
+    background: #f4f4fd;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
     padding: 12px 24px;
-
 }
 
-.filter-btn:hover,
+.filter-btn:hover, {
+    color: #FFFFFF;
+    background: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
 .filter-btn:focus {
     color: #FFFFFF;
-    background-color: #404BBF;
-    border-color: transparent;
-    box-shadow: 0px 3px 1px rgba(0,0,0,1),
-    0px 2px 1px rgba(0,0,0,0.08),
-    0px 2px 2px rgba(0,0,0,0.12);
+    background: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
@@ -467,22 +499,30 @@ img {
 }
 
 .works-container {
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid #E7E9FC;
+
+    
 }
-.works-container:hover, 
-.works-container:focus {
-    background-color: #ffffff;
-    border: 1px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46,47,66,0.08),
+
+.works-container:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46,47,66,0.16),
     0px 2px 1px rgba(46,47,66,0.88);
 }
+
+.works-container:focus{
+    background: #FFFFFF;
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46,47,66,0.16),
+    0px 2px 1px rgba(46,47,66,0.88);
+
+}
+
 .information-container {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     padding-left: 16px;
+    border: 1px solid #E7E9FC;
 }
 
 .works-top-text {
@@ -502,7 +542,6 @@ img {
     color: #434455;
 }
 
-.link {}
 
 
 /*-------------Footer----------*/
