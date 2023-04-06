@@ -421,7 +421,7 @@ background-color: #404BBF;
     border: 1px solid var(--color-ocean);
     border-radius: 4px;
 }
-.client-soc-link:hover > .client-soc-icon {
+.client-soc-link:hover > .client-soc-icon{
     fill: var(--color-ocean);
 }
 .client-soc-link:focus{
@@ -430,7 +430,7 @@ background-color: #404BBF;
     border: 1px solid var(--color-ocean);
     border-radius: 4px;
 }
-.client-soc-link:focus > .client-soc-icon {
+.client-soc-link:focus > .client-soc-icon{
     fill: var(--color-ocean);
 }
 
@@ -447,7 +447,6 @@ background-color: #404BBF;
 .filter-btn {
     height: 48px;
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -467,7 +466,7 @@ background-color: #404BBF;
     padding: 12px 24px;
 }
 
-.filter-btn:hover, {
+.filter-btn:hover {
     color: #FFFFFF;
     background: #404BBF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -500,21 +499,22 @@ background-color: #404BBF;
 
 .works-container {
 
-    
 }
 
 .works-container:hover{
+    background: #FFFFFF;
+    border: 1px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46,47,66,0.16),
-    0px 2px 1px rgba(46,47,66,0.88);
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .works-container:focus{
     background: #FFFFFF;
     border: 1px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46,47,66,0.16),
-    0px 2px 1px rgba(46,47,66,0.88);
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
 
