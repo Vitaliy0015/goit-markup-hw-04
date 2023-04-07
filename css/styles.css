@@ -502,27 +502,6 @@ background-color: #404BBF;
     gap: 48px 24px;
 }
 
-.works-container {
-
-}
-
-:hove{
-    background: #FFFFFF;
-    border: 1px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-:focu{
-    background: #FFFFFF;
-    border: 1px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-
-}
-
 .information-container {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -547,7 +526,22 @@ background-color: #404BBF;
     letter-spacing: 0.02em;
     color: #434455;
 }
+.works-link {
+    text-decoration: none;
+    display: block;
+    
+}
+.works-link:hover{
+    background: #FFFFFF;
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
+.works-link:focus{
+    background: #FFFFFF;
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 
 /*-------------Footer----------*/
