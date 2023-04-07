@@ -89,6 +89,10 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+
 }
 
 .header-container {
@@ -240,9 +244,8 @@ img {
     margin: 0 auto;
 }
 .priority-item {
-    width: calc((100%-60%)/4);
-    display: flex;
-    flex-direction: column;
+    width: calc((100% - 72px) / 4);
+
 }
 .priority-icon{
     display: flex;
@@ -405,7 +408,7 @@ background-color: #404BBF;
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    border: 1px solid var(--color-light-slate);
+    border: 1px solid #8E8F99;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -413,7 +416,7 @@ background-color: #404BBF;
 }
 
 .client-soc-icon {
-    fill: var(--color-light-slate);
+    fill: #8E8F99;
 }
 .client-soc-link:hover{
     width: 100%;
@@ -472,6 +475,7 @@ background-color: #404BBF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: transparent;
     border-radius: 4px;
 }
 
@@ -481,6 +485,7 @@ background-color: #404BBF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: transparent;
     border-radius: 4px;
 }
 
@@ -494,14 +499,14 @@ background-color: #404BBF;
 .works-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 21px;
+    gap: 48px 24px;
 }
 
 .works-container {
 
 }
 
-.works-container:hover{
+:hove{
     background: #FFFFFF;
     border: 1px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -509,7 +514,7 @@ background-color: #404BBF;
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.works-container:focus{
+:focu{
     background: #FFFFFF;
     border: 1px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -523,6 +528,7 @@ background-color: #404BBF;
     padding-bottom: 32px;
     padding-left: 16px;
     border: 1px solid #E7E9FC;
+    border-top: 0;
 }
 
 .works-top-text {
